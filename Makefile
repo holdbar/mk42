@@ -67,3 +67,6 @@ docs:
 
 mail-server:
 	../dev-scp/mail-server.sh
+
+test:
+	./manage.py test --settings=$(shell basename $(CURDIR)).settings.dev --traceback
